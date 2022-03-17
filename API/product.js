@@ -1,6 +1,6 @@
 const product = async (link, type) => {
     if (type == 'compact') { var compactResult = true, minimumResult = false; } else if (type == 'minimum') { var compactResult = false, minimumResult = true; } else { var compactResult = false, minimumResult = false; }
-    if (type == 'linear') { var linearResult true; linearResultData = {};}
+    if (type == 'linear') { var linearResult true, linearResultData = {};}
     try {
         const uri = encodeURI(link)
         console.log("Product details initiated")
