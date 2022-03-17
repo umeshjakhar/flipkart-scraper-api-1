@@ -14,7 +14,7 @@ const product = async (link, type) => {
             return JSON.stringify({
                 "error_message": e,
                 "possible_solution": "Validate your link and try removing https://www.flipkart.com from your product link",
-                "bug_report": "https://github.com/dvishal485/flipkart-scraper-api/issues"
+                "bug_report": "https://github.com/umeshjakhar/flipkart-scraper-api/issues"
             })
         }
         var rating = null, currentPrice = null, properURI = null, productName = null, originalPrice, highlights = [];
@@ -220,7 +220,7 @@ const product = async (link, type) => {
         return JSON.stringify({
             "error": "Couldn't fetch information : " + err.message,
             "possible_solution": "Don't lose hope, contact the support",
-            "bug_report": "https://github.com/dvishal485/flipkart-scraper-api/issues"
+            "bug_report": "https://github.com/umeshjakhar/flipkart-scraper-api/issues"
         }, null, 2)
     }
 }

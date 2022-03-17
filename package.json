@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dvishal485/flipkart-scraper.git"
+    "url": "git+https://github.com/umeshjakhar/flipkart-scraper.git"
   },
   "keywords": [
     "flipkart",
@@ -21,7 +21,7 @@
   "author": "Vishal Das",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/dvishal485/flipkart-scraper/issues"
+    "url": "https://github.com/umeshjakhar/flipkart-scraper/issues"
   },
-  "homepage": "https://github.com/dvishal485/flipkart-scraper#readme"
+  "homepage": "https://github.com/umeshjakhar/flipkart-scraper#readme"
 }

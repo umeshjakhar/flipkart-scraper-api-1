@@ -4,17 +4,17 @@ API to scrapes search result and product details from flipkart
 
 ![Flipkart API Banner](/banner.png)
 
-![Version](https://img.shields.io/badge/Version-2.1.0-green) [![GitHub license](https://img.shields.io/github/license/dvishal485/flipkart-scraper-api)](https://github.com/dvishal485/flipkart-scraper-api/blob/main/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/dvishal485/flipkart-scraper-api)](https://github.com/dvishal485/flipkart-scraper-api/issues) [![Telegram](https://img.shields.io/badge/chat-Telegram-yellow)](https://t.me/dvishal485) [![Documentation](https://img.shields.io/badge/API-Documentation-blue)](https://dvishal485.github.io/flipkart-scraper-api/)
+![Version](https://img.shields.io/badge/Version-2.1.0-green) [![GitHub license](https://img.shields.io/github/license/umeshjakhar/flipkart-scraper-api)](https://github.com/umeshjakhar/flipkart-scraper-api/blob/main/LICENSE) [![GitHub issues](https://img.shields.io/github/issues/umeshjakhar/flipkart-scraper-api)](https://github.com/umeshjakhar/flipkart-scraper-api/issues) [![Telegram](https://img.shields.io/badge/chat-Telegram-yellow)](https://t.me/umeshjakhar) [![Documentation](https://img.shields.io/badge/API-Documentation-blue)](https://umeshjakhar.github.io/flipkart-scraper-api/)
 
-**For documentation visit :** [Flipkart Scraper API](https://dvishal485.github.io/flipkart-scraper-api/)
+**For documentation visit :** [Flipkart Scraper API](https://umeshjakhar.github.io/flipkart-scraper-api/)
 
-**API :** [flipkart.dvishal485.workers.dev/](https://flipkart.dvishal485.workers.dev/)
+**API :** [flipkart.umeshjakhar.workers.dev/](https://flipkart.umeshjakhar.workers.dev/)
 
 ##  Deployment
 
 Deploy your own API with Cloudflare Workers
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/dvishal485/flipkart-scraper-api)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/umeshjakhar/flipkart-scraper-api)
 
 # Features
 
@@ -56,7 +56,7 @@ Deploy your own API with Cloudflare Workers
   - [x] Optimize existing code
   - [x] Improve accuracy
   - [x] Get product details (price & stock) specific to individual's pincode
-    - Check out new repository [flipkart-product-stock](https://github.com/dvishal485/flipkart-product-stock)
+    - Check out new repository [flipkart-product-stock](https://github.com/umeshjakhar/flipkart-product-stock)
   - [x] New Project : Telegram bot to notify about price drop alerts
     - Check out [@flipkartX_bot](https://t.me/flipkartX_bot)
     - The bot can give you search result of any product and set price drop/rise alerts as well as stock availability alerts directly on Telegram.
@@ -64,4 +64,4 @@ Deploy your own API with Cloudflare Workers
 # License & Copyright
 
   - This Project is [Apache-2.0](./LICENSE) Licensed
-  - Copyright 2021 [Vishal Das](https://github.com/dvishal485)
+  - Copyright 2021 [Vishal Das](https://github.com/umeshjakhar)
