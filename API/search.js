@@ -109,7 +109,7 @@ var searchURL = 'https://www.flipkart.com/search?marketplace=FLIPKART&q=' + q;
                         "original_price": originalPrice,
                         "discounted": isDiscounted,
                         thumbnail,
-                        "linear_query_url": clean(productLink).replace('www.flipkart.com', host + '/product/linear').replace('dl.flipkart.com', host + '/product')
+                        "linear_query_url": clean(productLink).replace('www.flipkart.com', host + '/product/linear').replace('dl.flipkart.com', host + '/product'),
                         "query_url": clean(productLink).replace('www.flipkart.com', host + '/product').replace('dl.flipkart.com', host + '/product')
                     })
                 }
