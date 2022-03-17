@@ -41,7 +41,7 @@ Deploy your own API with Cloudflare Workers
       - Share URL (More presentable URL)
       - Product Thumbnails
       - Highlights
-      - Specifications
+      - Specifications 
 
   - Different Mode with different output size as per requirement    
     - Fetch the product result without any specifications as well as with condensed form of specifications as per requirement.
