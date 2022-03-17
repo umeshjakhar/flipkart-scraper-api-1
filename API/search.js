@@ -1,7 +1,7 @@
 const search = async (q,host) => {
 var searchURL = 'https://www.flipkart.com/search?marketplace=FLIPKART&q=' + q;
-    if(q=="mobilespoint"){
-       searchURL = 'https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&marketplace=FLIPKART&sort=recency_desc&page=1';
+    if(Number.isInteger(q){
+       searchURL = 'https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&marketplace=FLIPKART&sort=recency_desc&page='+q;
     }
 
     console.log("Search initiated : " + searchURL)
@@ -90,6 +90,7 @@ var searchURL = 'https://www.flipkart.com/search?marketplace=FLIPKART&q=' + q;
                             "original_price": originalPrice,
                             "discounted": isDiscounted,
                             thumbnail,
+                            "linear_query_url": clean(productLink).replace('www.flipkart.com', host + '/product').replace('dl.flipkart.com', host + '/product').replace('/product','/product/linear'),
                             "query_url": clean(productLink).replace('www.flipkart.com', host + '/product').replace('dl.flipkart.com', host + '/product')
                         })
                     }
@@ -109,7 +110,7 @@ var searchURL = 'https://www.flipkart.com/search?marketplace=FLIPKART&q=' + q;
                         "original_price": originalPrice,
                         "discounted": isDiscounted,
                         thumbnail,
-                        "linear_query_url": clean(productLink).replace('www.flipkart.com', host + '/product/linear').replace('dl.flipkart.com', host + '/product'),
+                        "linear_query_url": clean(productLink).replace('www.flipkart.com', host + '/product').replace('dl.flipkart.com', host + '/product').replace('/product','/product/linear'),
                         "query_url": clean(productLink).replace('www.flipkart.com', host + '/product').replace('dl.flipkart.com', host + '/product')
                     })
                 }
