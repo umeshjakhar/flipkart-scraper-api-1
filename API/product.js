@@ -1,5 +1,6 @@
 const product = async (link, type) => {
     if (type == 'compact') { var compactResult = true, minimumResult = false; } else if (type == 'minimum') { var compactResult = false, minimumResult = true; } else { var compactResult = false, minimumResult = false; }
+    if (type == 'linear') { var linearResult true; linearResultData = {};}
     try {
         const uri = encodeURI(link)
         console.log("Product details initiated")
@@ -170,6 +171,10 @@ const product = async (link, type) => {
                                         "property": property,
                                         "value": propertyValue
                                     })
+
+                                   if(linearResult){
+                                      linearResultData[property] = propertyValue;
+                                   }
                                 } else {
                                     compactDetails += property + ' : ' + propertyValue + '; '
                                 }
@@ -211,6 +216,20 @@ const product = async (link, type) => {
             });
             resultJson.specs = specs
         }
+
+        if (linearResult == true){
+            linearResultData["name"]= productName;
+            linearResultData["current_price"]= currentPrice;
+            linearResultData["original_price"]= originalPrice;
+            linearResultData["discounted"]= isDiscounted;
+            linearResultData["discount_percent"]= discount_percent;
+            linearResultData["rating"]= parseFloat(rating);
+            linearResultData["in_stock"]= inStock;
+            linearResultData["f_assured"]= fassured;
+
+            return JSON.stringify(linearResultData)
+        }
+
         if (compactResult || minimumResult) {
             return JSON.stringify(resultJson)
         } else {
