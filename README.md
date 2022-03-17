@@ -48,7 +48,7 @@ Deploy your own API with Cloudflare Workers
 
   - The API also removes all trackers & loggers in every link from flipkart giving an completely unbaised and cleaner output.
 
-# Todo
+# Todo 
 
   - [x] Make code Presentable and Readable
   - [x] Extend API for product details
