@@ -3,6 +3,7 @@ const search = async (q,host) => {
     if(q=="mobilespoint"){
         const searchURL = 'https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&marketplace=FLIPKART&sort=recency_desc&page=1';
     }
+
     else{
         const searchURL = 'https://www.flipkart.com/search?marketplace=FLIPKART&q=' + q;
     }
