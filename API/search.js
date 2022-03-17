@@ -1,11 +1,9 @@
 const search = async (q,host) => {
-
+var searchURL = 'https://www.flipkart.com/search?marketplace=FLIPKART&q=' + q;
     if(q=="mobilespoint"){
-        const searchURL = 'https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&marketplace=FLIPKART&sort=recency_desc&page=1';
+       searchURL = 'https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&marketplace=FLIPKART&sort=recency_desc&page=1';
     }
-    else{
-        const searchURL = 'https://www.flipkart.com/search?marketplace=FLIPKART&q=' + q;
-    }
+
     console.log("Search initiated : " + searchURL)
     var webPageContents = await (await fetch(searchURL)).text();
     // To rectify pages with exchange option
