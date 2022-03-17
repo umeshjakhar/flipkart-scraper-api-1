@@ -23,6 +23,11 @@ async function handleRequest(request) {
                 status: 200,
                 headers
             })
+         } else if (path.startsWith('/product/linear/')) {
+                    return new Response(await product(path.replace('/product/linear/', ''), 'linear'), {
+                        status: 200,
+                        headers
+                    })
         } else if (path.startsWith('/product/')) {
             return new Response(await product(path.replace('/product/', ''), 'general'), {
                 status: 200,
