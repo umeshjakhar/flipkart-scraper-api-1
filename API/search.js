@@ -1,6 +1,6 @@
 const search = async (q,host) => {
 var searchURL = 'https://www.flipkart.com/search?marketplace=FLIPKART&q=' + q;
-    if(Number.isInteger(q)){
+    if(Number.isInteger(Number.parseInt(q))){
        searchURL = 'https://www.flipkart.com/mobiles/pr?sid=tyy%2C4io&marketplace=FLIPKART&sort=recency_desc&page='+q;
     }
 
